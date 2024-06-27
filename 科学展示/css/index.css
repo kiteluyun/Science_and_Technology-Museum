@@ -1,0 +1,337 @@
+.myimg{
+	border: 1px solid transparent;
+	height: 500px;
+}
+.myimg img{
+	height: 500px;
+	width: 100%;
+}
+.myul a,.myul img{
+	width: 250px;
+	height: 250px;
+}
+.myul1 a,.myul1 img{
+	width: 200px;
+	height: 200px;
+}
+.fmyul li{
+	width: 95%;
+	 height: 50px;
+	 
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+	
+}
+.myp a{
+	border:0.5px solid #333;
+	
+}
+.myp a:hover{
+	background-color: deepskyblue;
+}
+
+.myuu .list-group-item:hover{
+	background-color: deepskyblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width:100%;
+    height:100%;
+	margin: 0 auto;
+    background-color: antiquewhite;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.slide-box {
+    position: relative;
+    /* width: 400px;
+    height: 400px; */
+    width: 100%;
+    height: 100%;
+    background-color: darkblue;
+    overflow: hidden;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 60px;
+    opacity: 0.8;
+}
+
+.slide-btn:hover {
+    opacity: 1;
+}
+
+.slide-btn-left {
+    left: 20px;
+}
+
+.slide-btn-left::after {
+    content: "\276E";
+}
+
+.slide-btn-right {
+    right: 20px;
+}
+
+.slide-btn-right::after {
+    content: "\276F";
+}
+
+.pagination-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-box>span {
+    margin: 0 10%;
+    flex: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+.pagination-box>span.chose {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.banner-item {
+    flex: none;
+    width: 100%;
+    height: 100%;
+    background: center center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.bi-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 10px;
+}
+
+.bi-content>h1 {
+    font-size: inherit;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.bi-content>h1>span {
+    font-size: 8em;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.bi-content>button {
+    font-size: inherit;
+    width: 16em;
+    height: 5em;
+    color: #fff;
+    background: none;
+    border: 0.2em solid #fff;
+    border-radius: 1em;
+    box-shadow: 0px 0px 5px #000;
+}
+.bi-content>button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bi-content>button>span {
+    font-size: 2.4em;
+}
+
+@media screen and (max-width: 900px) {
+    .slide-box {
+        width: 100%;
+        height: 400px;
+    }
+
+    .bi-content {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slide-box {
+        width: 100%;
+        height: 300px;
+    }
+    
+}
+
+
+/* 鼠标移动到图片上文字显示 */
+		.item{
+				width: 100%;
+				height: 100%;
+		/* background-color: pink; */
+				margin: 0 10px; 
+				float: left;
+				position: relative;
+				
+			}
+			.clearfix::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.item .item-mask{
+				background-color: rgba(0, 0, 0,0);
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				transition: background-color,ease .5s;
+				
+				
+			}
+			.item:hover  .item-mask{
+				background-color: rgba(0, 0, 0, .5);
+			}
+			.item p{
+				display: none;
+				text-indent: 2em;
+				line-height: 2em;
+			}
+			.item:hover p{
+				display: block;
+				color: white;
+			} 
+			.myli{
+				margin-top: 20px;
+				border: none;
+			}
+			.myli .item:hover img {
+			transform: scale(1.1);
+			transition: all 0.3s ease;
+			z-index: 1;
+			}
+			
+		
+
+		body{
+		    margin-top: 60px;
+		}
+		
+		.header-top .search{
+		    position: absolute;
+		    left: 20px;
+		    top: 8px;
+		}
+		.glyphicon{
+		    font-size: 32px;
+		}
+		.navhover li a:hover{
+			background-color: deepskyblue;
+			}
+			.footer {
+			    position: fixed;
+			    /* background: linear-gradient(0deg, rgba(28, 42, 82, 1) 1%, rgba(36, 69, 163, 1) 35%, rgba(9, 151, 230, 1) 68%); */
+			    background: #00173c;
+			    position: static;
+			    width: 100%;
+			    font-size: 14px;
+			    color: rgba(255, 255, 255, 0.7);
+			    height: 380px;
+			    text-align: center;
+			    background-size: cover;
+			}
+			
+			.footerBox {
+			    display: flex;
+			    justify-content: space-around;
+			}
+			
+			.footerBox dl {
+			    margin: 59px 0;
+			    cursor: pointer;
+			}
+			
+			.footerBox dt {
+			    font-weight: bolder;
+			    font-size: 24px;
+			    margin-bottom: 5px;
+			    position: relative;
+			    padding-bottom: 10px;
+			    color: #fff;
+			}
+			
+			.footerBox dd {
+			    margin-bottom: 16px;
+			}
+			
+			.footerBox dd::before {
+			    content: "+";
+			    margin-right: 8px;
+			    color: #3660d9;
+			    font-size: 18px;
+			    float: left;
+			}
+			
+			.footerBox i {
+			    width: 40px;
+			    height: 40px;
+			    background-image: linear-gradient( 0deg, rgb(9, 152, 230) 0%, rgb(54, 96, 217) 100%);
+			    line-height: 40px;
+			    color: #fff !important;
+			    text-align: center;
+			    border-radius: 50%;
+			    float: left;
+			}
+			
+			.footerBox dd span {
+			    padding-top: 10px;
+			}
+			
+			.footerBox dd p {
+			    width: 221px;
+			    overflow-wrap: break-word;
+			    height: 37px;
+			}
+			
+			.footerBox dd i {
+			    margin-right: 7px;
+			}
+			
+			.footerBox .about dd::before {
+			    content: "+";
+			    margin-right: 8px;
+			    color: #3660d9;
+			    font-size: 18px;
+			    float: left;
+			    margin-top: 10px;
+			}

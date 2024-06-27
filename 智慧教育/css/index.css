@@ -1,0 +1,222 @@
+.my_header h3{
+	text-align: center;
+	text-shadow: 1px 1px 1px #999;
+}
+.my_header>span{
+	text-indent: 2em;
+	padding: 0px 20px;
+	margin-top: 20px;
+}
+.my_header span span{
+	font-weight: bold;
+}
+.my_header a{
+	text-decoration: none;
+	color: black;
+}
+.my_header p{
+	margin: 10px auto;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #333;
+}
+.my_header p:hover{
+	background-color: deepskyblue;
+}
+
+
+.my_header{
+color: #333;
+line-height: 2em;
+}
+.my_header span{
+background: linear-gradient(to right,red,green,black);
+background-repeat: no-repeat;
+background-position: right bottom; 
+background-size: 0 2px;
+transition: background-size 1500ms;
+}
+.my_header span:hover{
+background-position-x: left;
+background-size: 100% 2px;
+}
+.my_header_span:hover{
+	background-color: deepskyblue;
+}
+.my_header_span{
+	margin-top: -10px;
+}
+
+
+
+.item{
+				width: 100%;
+				height: 100%;
+		/* background-color: pink; */
+				margin: 0 10px; 
+				float: left;
+				position: relative;
+				
+			}
+			.clearfix::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.item .item-mask{
+				background-color: rgba(0, 0, 0,0);
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				transition: background-color,ease .5s;
+				
+				
+			}
+			.item:hover  .item-mask{
+				background-color: rgba(0, 0, 0, .5);
+			}
+			.item p{
+				display: none;
+				text-indent: 2em;
+				line-height: 2em;
+			}
+			.item:hover p{
+				display: block;
+				color: white;
+			} 
+			.myli{
+				margin-top: 20px;
+				border: none;
+			}
+			.myli .item:hover img {
+			transform: scale(1.1);
+			transition: all 0.3s ease;
+			z-index: 1;
+			}
+			
+.myfooter a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.nav{
+			display: flex;
+			flex-direction: row;
+			color: #fff;
+			font-size: 1.25rem;
+			align-items: center;
+		}
+		.nav ul li{
+			text-align: center;
+		}
+		.nav li a{
+			color: #fff;
+			text-decoration: none;
+			display: block;
+			padding: 20px 30px;
+			text-align: center;
+		}
+		.nav li a:hover{
+			background-color: blue;
+		}
+		.login{
+			margin-left: auto;
+		}
+		@media screen and (max-width:980px) {
+			.navContainer{
+				background: #000056;
+			}
+			.nav{
+				flex-direction: column;
+			}
+			.login{
+				margin-left: unset;//恢复默认
+			}
+			.nav li a:hover{
+				background-color: #000062;
+			}
+			.nav li{
+				width: 100%;
+			}
+		}
+		
+	.footer {
+	    position: fixed;
+	    /* background: linear-gradient(0deg, rgba(28, 42, 82, 1) 1%, rgba(36, 69, 163, 1) 35%, rgba(9, 151, 230, 1) 68%); */
+	    background: #00173c;
+	    position: static;
+	    width: 100%;
+	    font-size: 14px;
+	    color: rgba(255, 255, 255, 0.7);
+	    height: 380px;
+	    text-align: center;
+	    background-size: cover;
+	}
+	
+	.footerBox {
+	    display: flex;
+	    justify-content: space-around;
+	}
+	
+	.footerBox dl {
+	    margin: 59px 0;
+	    cursor: pointer;
+	}
+	
+	.footerBox dt {
+	    font-weight: bolder;
+	    font-size: 24px;
+	    margin-bottom: 5px;
+	    position: relative;
+	    padding-bottom: 10px;
+	    color: #fff;
+	}
+	
+	.footerBox dd {
+	    margin-bottom: 16px;
+	}
+	
+	.footerBox dd::before {
+	    content: "+";
+	    margin-right: 8px;
+	    color: #3660d9;
+	    font-size: 18px;
+	    float: left;
+	}
+	
+	.footerBox i {
+	    width: 40px;
+	    height: 40px;
+	    background-image: linear-gradient( 0deg, rgb(9, 152, 230) 0%, rgb(54, 96, 217) 100%);
+	    line-height: 40px;
+	    color: #fff !important;
+	    text-align: center;
+	    border-radius: 50%;
+	    float: left;
+	}
+	
+	.footerBox dd span {
+	    padding-top: 10px;
+	}
+	
+	.footerBox dd p {
+	    width: 221px;
+	    overflow-wrap: break-word;
+	    height: 37px;
+	}
+	
+	.footerBox dd i {
+	    margin-right: 7px;
+	}
+	
+	.footerBox .about dd::before {
+	    content: "+";
+	    margin-right: 8px;
+	    color: #3660d9;
+	    font-size: 18px;
+	    float: left;
+	    margin-top: 10px;
+	}

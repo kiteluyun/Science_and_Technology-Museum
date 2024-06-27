@@ -1,0 +1,92 @@
+.aside{
+	width: 980px;
+	margin: 0 auto;
+	padding: 15px;
+	font-size: 14px;
+	padding-top: 160px;
+}
+.aside>p a:after{
+	content: " >> ";
+}
+.register{
+	width: 980px;
+	height: 650px;
+	border: 1px solid gray;
+	margin-top: 10px;
+}
+.reg{
+	position: relative;
+}
+.reg img{
+	width: 120px;
+	margin: 30px 10px 10px 30px;
+}
+.reg>p{
+	margin: 30px 90px 20px 160px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid gray;
+	position: relative;
+	top: -80px;
+}
+.reg>p span{
+	margin-right: 460px;
+	color:#57a7c0;
+	font-size: 26px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #57a7c0;
+}
+
+.reg p a{
+	color:#57a7c0;
+}
+.inp{
+	width: 600px;
+	height: 490px;
+	margin-top: -70px;
+	margin-left: 200px;
+	background-color: #fff;
+}
+.inp p{
+	padding-top: 50px;
+	margin-left: 70px;
+	font-size: 16px;
+	font-weight: bold;
+}
+input{
+	border: 1px solid #000;
+}
+.inp p:nth-last-child(1){
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 150px;
+}
+.inp p input{
+	width: 280px;
+	height: 40px;
+}
+.inp button{
+	width: 180px;
+	height: 35px;
+	background-color:#33b0cc;
+	border: #0c849b;
+	border-radius: 5px;
+	margin-left: 200px;
+	margin-top: 40px;
+}
+.inp a{
+	color:#57a7c0;
+	margin-left: 100px;
+	position: relative;
+	top:40px;
+	right:200px
+	
+}
+.login{
+	margin-left: 340px;
+}
+.login a img{
+	position: relative;
+	margin-top: -60px;
+	width: 40px;
+	z-index: 999;
+}

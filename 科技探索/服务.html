@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<script src="./js/jquery1.42.min.js"></script>
+		<script src="./js/jquery.SuperSlide.2.1.1.js"></script>
+		<script src="./js/jquery.SuperSlide.2.1.1.source.js"></script>
+		<script src="js/parallax.js"></script>
+		<script src="../首页/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="./style/服务.css">
+<style>
+	.navhover li a:hover{
+		background-color: deepskyblue;
+		}
+		
+	.footer {
+	    position: fixed;
+	    /* background: linear-gradient(0deg, rgba(28, 42, 82, 1) 1%, rgba(36, 69, 163, 1) 35%, rgba(9, 151, 230, 1) 68%); */
+	    background: #00173c;
+	    position: static;
+	    width: 100%;
+	    font-size: 14px;
+	    color: rgba(255, 255, 255, 0.7);
+	    height: 380px;
+	    text-align: center;
+	    background-size: cover;
+	}
+	
+	.footerBox {
+	    display: flex;
+	    justify-content: space-around;
+	}
+	
+	.footerBox dl {
+	    margin: 59px 0;
+	    cursor: pointer;
+	}
+	
+	.footerBox dt {
+	    font-weight: bolder;
+	    font-size: 24px;
+	    margin-bottom: 5px;
+	    position: relative;
+	    padding-bottom: 10px;
+	    color: #fff;
+	}
+	
+	.footerBox dd {
+	    margin-bottom: 16px;
+	}
+	
+	.footerBox dd::before {
+	    content: "+";
+	    margin-right: 8px;
+	    color: #3660d9;
+	    font-size: 18px;
+	    float: left;
+	}
+	
+	.footerBox i {
+	    width: 40px;
+	    height: 40px;
+	    background-image: linear-gradient( 0deg, rgb(9, 152, 230) 0%, rgb(54, 96, 217) 100%);
+	    line-height: 40px;
+	    color: #fff !important;
+	    text-align: center;
+	    border-radius: 50%;
+	    float: left;
+	}
+	
+	.footerBox dd span {
+	    padding-top: 10px;
+	}
+	
+	.footerBox dd p {
+	    width: 221px;
+	    overflow-wrap: break-word;
+	    height: 37px;
+	}
+	
+	.footerBox dd i {
+	    margin-right: 7px;
+	}
+	
+	.footerBox .about dd::before {
+	    content: "+";
+	    margin-right: 8px;
+	    color: #3660d9;
+	    font-size: 18px;
+	    float: left;
+	    margin-top: 10px;
+	}
+</style>
+	</head>
+	<body>
+	<header class="header-top">
+			    <nav class="navbar navbar-expand-lg  fixed-top" style="background-color:  #000056;">
+			        <div class="container">
+			            <a href="#" class="navbar-brand"></a>
+			
+			            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demo" style="background-color: white;">
+			                <span class="navbar-toggler-icon"></span>
+						
+			            </button>
+			        <div id="demo" class="collapse navbar-collapse justify-content-between">
+			            <ul class="navbar-nav navhover">
+			                <li class="nav-item">
+			                    <a class="nav-link" href="../首页/index.html" style="color: white;">首页</a>
+			                </li>
+			                <li class="nav-item">
+			                    <a class="nav-link" href="../科技探索/科技探索.html"  style="color: white;">科技探索</a>
+			                </li>
+			                <li class="nav-item">
+			                    <a class="nav-link" href="../科学展示/index.html"  style="color: white;">科学展示</a>
+			               </li>
+							<li class="nav-item">
+			                    <a class="nav-link" href="../导览/index,.html"  style="color: white;">展馆导览</a>
+			                </li>
+			                <li class="nav-item">
+			                    <a class="nav-link" href="../智慧教育/index.html"  style="color: white;">智慧教育</a>
+			                </li>
+			                <li class="nav-item">
+			                    <a class="nav-link" href="#"  style="color: white;">展馆服务</a>
+			                </li>
+			            </ul>
+			        </div>
+			        </div>
+			    </nav>
+			</header> 
+		<div class="container-fluid">
+			<div class="row row-cols-sm-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
+			<!-- <div class="div_container">
+				<div class="bd-placeholder-img h_img1"><img src="./img/1.webp" alt=""></div>
+			</div> -->
+			<div class="picMarquee-left">
+				<div class="bd">
+					<dl>
+						<dd><img src="./img/2.webp" alt=""></dd>
+						<dd><img src="./img/3.webp" alt=""></dd>
+						<dd><img src="./img/4.webp" alt=""></dd>
+						<dd><img src="./img/5.webp" alt=""></dd>
+						<dd><img src="./img/6.webp" alt=""></dd>
+						<dd><img src="./img/8.webp" alt=""></dd>
+						<dd><img src="./img/0.jpg" alt=""></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="wrap">
+				<p>围绕“把科技馆带回家”的核心理念，经过不断探索与实践，中国科学技术馆的文创工作在机制建立、企业联动、合作交流、产品开发与营销等方面取得了突破性进展。现已初步形成包括中国科学技术馆科学商店线下门店、自助售货机、天猫旗舰店、经我馆认可的馆外渠道等线上线下、馆内馆外相结合的多渠道营销格局。在售产品全部为中国科学技术馆自有品牌文创产品，部分特色文创精品进入外交部礼品展厅、中国国家博物馆等进行展示和销售，为科技与文化融合发展持续赋能。
+				</p>
+			</div>
+			<!-- <div class="div_container">
+				<div class="bd-placeholder-img h_img1"><img src="./img/1.webp" alt=""></div>
+			</div> -->
+
+
+			<section class="w3l-timeline-1 py-5">
+				<div class="timeline"><h3 style="text-align: center;">文创馆历程</h3>
+					<div class="container1 py-lg-5 py-md-4 py-2">
+						<ul class="timeline">
+							<li class="timeline-item">
+								<figure class="timeline-icon">
+									<span></span>
+								</figure>
+								<div class="dir-r radius-3">
+									<p>文创馆一期开始建设，进行人员招募</p>
+								</div>
+								<div class="date-l">
+									2008</div>
+							</li>
+							<li class="timeline-item">
+								<figure class="timeline-icon">
+								</figure>
+								<div class="dir-l radius-3">
+									<img src="./img/10.webp" class="img-fluid radius-image" alt="">
+								</div>
+								<div class="date-r">
+									迎来第一批客人 2009</div>
+							</li>
+							<li class="timeline-item">
+								<figure class="timeline-icon">
+									<span></span>
+								</figure>
+								<div class="dir-r radius-3">
+
+									<p>科技馆文创成功亮相科学博物馆学会年会，中国科学技术馆天猫旗舰店11月20日正式开业啦
+									</p>
+								</div>
+								<div class="date-l">
+									2012</div>
+							</li>
+							<li class="timeline-item">
+								<figure class="timeline-icon">
+									<span></span>
+								</figure>
+								<div class="dir-l radius-3">
+									<div class="timeline_video">
+										<img src="./images/R-C (1).jfif" class="img-fluid radius-image" alt="">
+										
+									</div>
+								</div>
+								<div class="date-r">
+									全新展示 2018</div>
+							</li>
+							<li class="timeline-item">
+								<figure class="timeline-icon">
+									<span></span>
+								</figure>
+								<div class="dir-r radius-3 mb-0">
+
+									<p class="font-italic">
+										2022年4月16日，神舟十三号载人飞船返回舱成功着陆，中国科技馆举办“英雄返航，梦想起航”主题教育活动，通过科学实验、科学表演等多种形式，为公众提供全方位、多感官的航天科普体验。
+									</p>
+								</div>
+								<div class="date-l">
+									2022</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- <div class="picMarquee-left">
+				<div class="bd">
+					<dl>
+					 <dd><img src="./img/2.webp" alt=""></dd>
+						<dd><img src="./img/3.webp" alt=""></dd>
+						<dd><img src="./img/4.webp" alt=""></dd>
+						<dd><img src="./img/5.webp" alt=""></dd>
+						<dd><img src="./img/6.webp" alt=""></dd>
+						<dd><img src="./img/8.webp" alt=""></dd>
+						<dd><img src="./img/0.jpg" alt=""></dd>
+					</dl>
+				</div>
+			</div> -->
+			<p class="wen">
+
+			</p>
+			<h3 style="text-align: center;">文创展示</h3><div class="foot">
+				<div class="row row-cols-sm-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<img src="./img/1.png" alt="">
+					<p class="foot1">
+										未来，中国科学技术馆将继续秉承创新、融合、发展的文创工作思路，广泛与社会力量联合协作，开发文创精品，将科学商店打造为中国科技馆“最后一个展厅”，促进科学文化传播，弘扬科学家精神，丰富公众精神文化生活，<br>科技礼品——好奇心点亮未来好奇心是人类特有的神奇属性，中国科技馆的时尚礼品尽显诚意满满的科技范儿，只为点亮你的好奇心，让你的生活更加精彩。
+					</p>
+				</div>
+				<div class="row row-cols-sm-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+					<p class="foot1">
+						同时积极发挥示范引领作用，推动科技馆文创事业健康持续发展，用文创讲好科技馆故事，促进实现新时代发展愿景，助力科技文化强国建设。<br>科学玩具——爱科学，爱探索，动起手来！以科技馆展品和科普知识为基础的科学玩具，让孩子在玩乐之中掌握科学知识，提高动手能力，成为一个个小小科学家。
+					</p><img src="./img/2.png" alt="">
+				</div>
+			</div>
+			<div class="foo">
+				<div class="row row-cols-sm-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<img src="./img/3.png" alt=""><img src="./img/4.png" alt=""><img src="./img/5.png" alt=""><img src="./img/7.png" alt="">
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+		    <div class="footerBox wrapper">
+		        <dl class="col-4">
+		            <dt>友情链接</dt>
+		            <dd>首页</dd>
+		            <dd>科技展示</dd>
+		            <dd>教育</dd>
+		            <dd>服务</dd>
+		         
+		        </dl>
+		  
+		        <dl class="about col-4">
+		            <dt>关于我们</dt>
+		            <dd>
+		                <i class="icon icon-shizhong"></i>
+		                <p>星期一 -- 星期六:<br>9:00am -- 10:00Pm</p>
+		            </dd>
+		            <dd>
+		                <i class="icon icon-weibiaoti-3"></i>
+		                <p>黑龙江省哈尔滨市南岗区**路****号</p>
+		            </dd>
+		            <dd>
+		                <i class="icon icon-dianhua"></i>
+		                <p class="special">0451-1234-5678<br>0451-1234-5678</p>
+		            </dd>
+		            <dd>
+		                <i class="icon icon-xinfeng"></i>
+		                <p class="special">123@456.com<br>123@456.com</p>
+		            </dd>
+		        </dl>
+		
+		
+		    </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		jQuery(".picMarquee-left").slide({
+			mainCell: ".bd dl",
+			autoPlay: true,
+			effect: "leftMarquee",
+			vis: 3,
+			interTime: 0,
+			trigger: "click"
+		});
+	</script>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>科技博物馆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/parallax.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+	<header class="header-top">
+	    <nav class="navbar navbar-expand-lg  fixed-top" style="background-color:  #000056;">
+	        <div class="container">
+	            <a href="#" class="navbar-brand"></a>
+	
+	            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demo" style="background-color: white;">
+	                <span class="navbar-toggler-icon"></span>
+				
+	            </button>
+	        <div id="demo" class="collapse navbar-collapse justify-content-between">
+	            <ul class="navbar-nav navhover">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="" style="color: white;">首页</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../科技探索/科技探索.html"  style="color: white;">科技探索</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../科学展示/index.html"  style="color: white;">科学展示</a>
+	               </li>
+					<li class="nav-item">
+	                    <a class="nav-link" href="../导览/index,.html"  style="color: white;">展馆导览</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../智慧教育/index.html"  style="color: white;">智慧教育</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../科技探索/服务.html"  style="color: white;">展馆服务</a>
+	                </li>
+	            </ul>
+	        </div>
+	        </div>
+	    </nav>
+	</header> 
+	<!-- <div style="width: 100%; height: 500px;"></div> -->
+    <div class="container-fluid">
+        <ul id="scene">
+            <li class="layer" data-depth=".2"><img src="img/planet1.png" class="img-fluid"></li>
+            <li class="layer" data-depth=".3"><img src="img/planet2.png" class="img-fluid"></li>
+            <li class="layer" data-depth=".2"><img src="img/man.png" class="img-fluid"></li>
+            <li class="layer" data-depth=".5"><img src="img/earth.png" class="img-fluid"></li>
+            <!-- <li class="layer" data-depth=".1"><img src="img/text.png"></li> -->
+            <li class="layer" data-depth=".4"><img src="img/planet3.png" class="img-fluid"></li>
+            <li class="layer" data-depth=".8"><img src="img/planet4.png" class="img-fluid"></li>
+            <li class="layer" data-depth="0"><img src="img/planet5.png" class="img-fluid"></li>
+        </ul>
+    </div>
+
+		
+		<div class="footer">
+		    <div class="footerBox wrapper">
+		        <dl class="col-4">
+		            <dt>友情链接</dt>
+		            <dd>首页</dd>
+		            <dd>科技展示</dd>
+		            <dd>教育</dd>
+		            <dd>服务</dd>
+		         
+		        </dl>
+		  
+		        <dl class="about col-4">
+		            <dt>关于我们</dt>
+		            <dd>
+		                <i class="icon icon-shizhong"></i>
+		                <p>星期一 -- 星期六:<br>9:00am -- 10:00Pm</p>
+		            </dd>
+		            <dd>
+		                <i class="icon icon-weibiaoti-3"></i>
+		                <p>黑龙江省哈尔滨市南岗区**路****号</p>
+		            </dd>
+		            <dd>
+		                <i class="icon icon-dianhua"></i>
+		                <p class="special">0451-1234-5678<br>0451-1234-5678</p>
+		            </dd>
+		            <dd>
+		                <i class="icon icon-xinfeng"></i>
+		                <p class="special">123@456.com<br>123@456.com</p>
+		            </dd>
+		        </dl>
+		
+		
+		    </div>
+		</div>
+		
+		
+	</div>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+</body>
+</html>

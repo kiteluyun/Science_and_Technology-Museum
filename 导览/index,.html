@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<title>Document</title>
+		<script src="js/parallax.JS"></script>
+		<script src="../科学展示/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="./CSS/bootstrap-5.3.0-alpha1/dist/css/bootstrap.min.css">
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+		
+			    margin-top: 60px;
+			
+			/* width: 100%; */
+			height: 250rem;
+
+			/* font-size: 4.2vw; */
+		}
+
+		
+
+		.container {
+			/* border: .0625rem solid rgb(0, 0, 0); */
+			padding: .3125rem;
+			box-sizing: border-box;
+			/* width: 90%; */
+			margin: 0 auto;
+
+		}
+
+
+		.container .xuzhi {
+			/* width: 100%; */
+			/* height: 7.5rem; */
+			border: .0625rem solid black;
+			margin: .625rem auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		footer {
+			text-align: center;
+			line-height: 6.25rem;
+		}
+
+		#classes,
+		.w3l-homeblock1 {
+			margin: 0;
+			/* 			width: 100%;
+ */
+			background: #f8f9fa;
+			border-radius: 10px;
+		}
+
+		.icon h4,
+			{
+			padding-top: 15px;
+		}
+
+		.icon p {
+			margin-bottom: 0rem;
+			color: #333;
+		}
+
+		a:link {
+			color: #333;
+			text-decoration: none;
+		}
+
+		a:visited {
+			color: #ff0000;
+		}
+
+		a:hover {
+			color: #ff5500;
+		}
+
+		a:active {
+			color: #00aa00;
+		}
+
+		.icon img {
+			width: 120px;
+			height: 120px;
+			/* background-color: #c7c7c7; */
+
+		}
+
+		.a1 {
+			width: 50%;
+			/* background-color: rgba(, green, blue, alpha); */
+		}
+
+		#b1 {
+			max-width: 655px;
+			margin: -422px 100px 0px 627px;
+
+
+		}
+
+		h3.title-style {
+			font-size: 48px;
+			line-height: 58px;
+			font-weight: bold;
+			margin-left: 20px;
+		}
+
+		.img-border {
+			position: relative;
+		}
+
+		.img-border1 {
+			border: 8px solid #ddddde;
+			position: absolute;
+			right: -25px;
+			left: 25px;
+			bottom: 25px;
+			top: -25px;
+			border-radius: 10px;
+			z-index: -1;
+			max-width: 453px;
+		}
+
+		#weapper {
+			width: 550px;
+			height: 800px;
+			border-radius: 10px;
+		}
+
+		.videow3-right::before {
+			content: "";
+			background: var(--layer);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			border-radius: 12px
+		}
+
+		.w3l-button-sec {
+			background-image: url("./images/5.jpg");
+			height: 400px;
+
+			opacity: 0.9;
+			color: #fff;
+		}
+
+		.w3-midhny-sec h3 a {
+			color: #fff;
+			font-family: 'Londrina Outline', cursive;
+			font-size: 40px;
+			letter-spacing: 2px;
+			margin-left: 10px;
+			display: block;
+			border-bottom: 1px solid transparent;
+			transition: all 1.8s ease-in-out;
+		}
+
+		.btn-style {
+			padding: 10px 36px;
+			font-size: 16px;
+			color: #fff;
+			border-radius: 30px;
+			font-weight: 600;
+			outline: none;
+			border: 2px solid #f50537;
+			background: #f50537;
+			transition: all 1.8s ease-in-out;
+		}
+
+		#a8 {
+
+			height: 780px;
+
+		}
+
+		#a7 {
+			background: #b8b8b8;
+			border-radius: 20px;
+		}
+		.col-lg-6{
+			padding-left: 0px;
+		}
+
+		/* .col-lg-5{
+			margin-left: 3.125rem;
+		} */
+		
+		
+				.navContainer{
+					background: #000;
+				}
+				ul{
+					list-style: none;
+				}
+				.nav{
+					display: flex;
+					flex-direction: row;
+					color: #fff;
+					font-size: 1.25rem;
+					align-items: center;
+				}
+				.nav ul li{
+					text-align: center;
+				}
+				.nav li a{
+					color: #fff;
+					text-decoration: none;
+					display: block;
+					padding: 20px 30px;
+					text-align: center;
+				}
+				.nav li a:hover{
+					background-color: blue;
+				}
+				.login{
+					margin-left: auto;
+				}
+				@media screen and (max-width:980px) {
+					.navContainer{
+						background: #000056;
+					}
+					.nav{
+						flex-direction: column;
+					}
+					.login{
+						margin-left: unset;//恢复默认
+					}
+					.nav li a:hover{
+						background-color: #000062;
+					}
+					.nav li{
+						width: 100%;
+					}
+				}
+		.container {
+		    width: 100%;
+		
+		    overflow: hidden;
+		    background: url(../img/background.jpg);
+		    background-attachment: fixed;
+		}
+		#c1 {
+			background: url(img/background.jpg);
+		}
+		.navhover li a:hover{
+			background-color: deepskyblue;
+			}
+			
+	.footer {
+	    position: fixed;
+	    /* background: linear-gradient(0deg, rgba(28, 42, 82, 1) 1%, rgba(36, 69, 163, 1) 35%, rgba(9, 151, 230, 1) 68%); */
+	    background: #00173c;
+	    position: static;
+	    width: 100%;
+	    font-size: 14px;
+	    color: rgba(255, 255, 255, 0.7);
+	    height: 380px;
+	    text-align: center;
+	    background-size: cover;
+	}
+	
+	.footerBox {
+	    display: flex;
+	    justify-content: space-around;
+	}
+	
+	.footerBox dl {
+	    margin: 59px 0;
+	    cursor: pointer;
+	}
+	
+	.footerBox dt {
+	    font-weight: bolder;
+	    font-size: 24px;
+	    margin-bottom: 5px;
+	    position: relative;
+	    padding-bottom: 10px;
+	    color: #fff;
+	}
+	
+	.footerBox dd {
+	    margin-bottom: 16px;
+	}
+	
+	.footerBox dd::before {
+	    content: "+";
+	    margin-right: 8px;
+	    color: #3660d9;
+	    font-size: 18px;
+	    float: left;
+	}
+	
+	.footerBox i {
+	    width: 40px;
+	    height: 40px;
+	    background-image: linear-gradient( 0deg, rgb(9, 152, 230) 0%, rgb(54, 96, 217) 100%);
+	    line-height: 40px;
+	    color: #fff !important;
+	    text-align: center;
+	    border-radius: 50%;
+	    float: left;
+	}
+	
+	.footerBox dd span {
+	    padding-top: 10px;
+	}
+	
+	.footerBox dd p {
+	    width: 221px;
+	    overflow-wrap: break-word;
+	    height: 37px;
+	}
+	
+	.footerBox dd i {
+	    margin-right: 7px;
+	}
+	
+	.footerBox .about dd::before {
+	    content: "+";
+	    margin-right: 8px;
+	    color: #3660d9;
+	    font-size: 18px;
+	    float: left;
+	    margin-top: 10px;
+	}
+		
+	</style>
+
+	<body>
+<header class="header-top">
+	    <nav class="navbar navbar-expand-lg  fixed-top" style="background-color:  #000056;">
+	        <div class="container">
+	            <a href="#" class="navbar-brand"></a>
+	
+	            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demo" style="background-color: white;">
+	                <span class="navbar-toggler-icon"></span>
+				
+	            </button>
+	        <div id="demo" class="collapse navbar-collapse justify-content-between">
+	            <ul class="navbar-nav navhover">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../../科技博物馆/首页/index.html" style="color: white;">首页</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../../科技博物馆/科技探索/科技探索.html"  style="color: white;">科技探索</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../科学展示/index.html"  style="color: white;">科学展示</a>
+	               </li>
+					<li class="nav-item">
+	                    <a class="nav-link" href="#"  style="color: white;">展馆导览</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../智慧教育/index.html"  style="color: white;">智慧教育</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="../科技探索/服务.html"  style="color: white;">展馆服务</a>
+	                </li>
+	            </ul>
+	        </div>
+	        </div>
+	    </nav>
+	</header> 
+		
+		<div class="container">
+			<section class="w3l-classes py-5" id="classes">
+				<h3 class="title-style text-center"><img style="width: 25px;" src="./images/public-icon3.png"
+						alt="">展馆之旅 即刻启航<img style="width: 25px;" src="./images/public-icon4.png" alt="">
+				</h3>
+					<div class="col-sm-6">
+						<div class="row text-center justify-content-center">
+							<div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+								<a href="#about" class="title-head mt-4 mb-2">
+									<div class="icon">
+
+
+										<img src="./images/time_opening.png" alt="">
+
+										<h4>【开放时间】</h4>
+										<p>让这场旅行更“准时”</p>
+
+
+									</div>
+								</a>
+
+
+							</div>
+							<div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+
+								<a href="#jioatong" class="title-head mt-4 mb-2">
+									<div class="icon">
+										<img src="./images/关联展会.png" alt="">
+
+										<h4>【交通路线】</h4>
+										<p>让您的行程更便捷</p>
+									</div>
+								</a>
+
+							</div>
+							<div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+
+								<a href="#zhanguan" class="title-head mt-4 mb-2">
+									<div class="icon">
+										<img src="./images/展厅展馆创新应用.png" alt="">
+
+										<h4>【全景展馆】
+										</h4>
+										<p>为您定制专属路线</p>
+									</div>
+								</a>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+
+								<a href="#" class="title-head mt-4 mb-2">
+									<div class="icon">
+
+										<img src="./images/订票 (1).png" alt="">
+
+										<h4>【在线订票】</h4>
+										<p>提前预定展馆门票</p>
+									</div>
+								</a>
+
+							</div>
+							<div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+
+								<a href="#video" class="title-head mt-4 mb-2">
+									<div class="icon">
+
+										<img src="./images/展厅.png" alt="">
+
+										<h4>【展厅介绍】</h4>
+										<p>提前了解所喜欢的科学</p>
+									</div>
+								</a>
+
+							</div>
+							<div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+
+								<a href="#canguan" class="title-head mt-4 mb-2">
+									<div class="icon">
+
+										<img src="./images/告警规则.png" alt="">
+
+										<h4>【参观需知】</h4>
+										<p>让您的行程更舒心</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-sm-6">
+						<img id="b1" class="img-fluid radius-image" src="./images/1161632550.gif" alt="">
+					</div>
+			</section>
+
+
+
+
+
+
+
+			<section class="about" id="about">
+				<div class="container py-lg-5 py-md-4 py-2" id="about">
+					<h3 class="title-style text-center"><img style="width: 25px;" src="./images/public-icon3.png"
+							alt="">开放时间<img style="width: 25px;" src="./images/public-icon4.png" alt=""></h3>
+					<div class="row align-items-center">
+						<div class="col-lg-6 section-width pe-xl-5 pt-lg-4">
+
+							<h3 class="title-style">欢迎来到&nbsp;<span style="font-weight: normal;">博物馆</span></h3>
+							<p class="mt-4">
+								科技博物馆全年开放，开放时间按照淡、旺季会有所改变，遇到法定假期也会延长或缩短开放时间，请随时注意本网站的公告！如果遇到重大活动或特殊情况，开放时间如有改变，博物馆网站将特别发布公告。除法定节假日外，博物馆全年实行周一全天闭馆的措施。
+							</p>
+							<p class="mt-4 pb-dm-3">旺季开放时间 *4.1--10.31* <br>每年4月1日至10月31日采用旺季开放时间<br>
+								开放入馆时间：&nbsp;&nbsp;&nbsp;&nbsp;08:30<br>
+								停止入馆时间：&nbsp;&nbsp;&nbsp;&nbsp;16:00<br>
+								&emsp;&emsp;闭馆时间：&nbsp;&nbsp;&nbsp;&nbsp;17:00</p>
+
+							<p class="mt-4 pb-dm-3">淡季开放时间 *11.1--3.31*<br>每年11月1日至3月31日采用旺季开放时间<br>
+								开放入馆时间：&nbsp;&nbsp;&nbsp;&nbsp;08:30<br>
+								停止入馆时间：&nbsp;&nbsp;&nbsp;&nbsp;15:30<br>
+								&emsp;&emsp;闭馆时间：&nbsp;&nbsp;&nbsp;&nbsp;16:30</p>
+							<!-- <a href="about.html" class="btn btn-style mt-5"> 了解更多请联系我们</a> -->
+						</div>
+						<div class="col-lg-6 history-info mt-lg-0 mt-5 pt-md-4 pt-2">
+							<div class="img-border">
+								<div class="img-border1"></div>
+								<img style="width: 453px; height: 18.75rem;" src="./images/OIP-C.jpg"
+									class="img-fluid radius-image" alt="video-popup">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+			<section class="w3l-whyblock" id="jioatong">
+				<h3 class="title-style text-center"><img style="width: 25px;" src="./images/public-icon3.png"
+						alt="">交通路线<img style="width: 25px;" src="./images/public-icon4.png" alt=""></h3>
+				<div class="container py-lg-5 py-md-4 py-2">
+					<div id="a7" class="row align-items-center">
+						<div class="col-lg-6" >
+							<div id="weapper"></div>
+						</div>
+						<div id="a8" class="col-lg-6 ps-xl-5 ps-lg-4 mt-lg-0 mt-5">
+							<h3 class="title-style mb-4"> <span></span></h3>
+							<p>中国科技馆新馆位于北京市朝阳区北辰东路5号，奥林匹克公园中心区东北部，鸟巢正北1公里。
+
+							</p>
+							<div class="two-grids mt-5">
+								<div class="grids_info">
+									<i class="fas fa-volume-up"></i>
+									<div class="detail">
+										<h4>1.公交线路：</h4>
+										<p>
+											（1）乘坐311路；319路（原751路）；379路；450路；484路；466路；695路到“洼里南口”站，向北步行约7分钟到达中国科学技术馆；<br>
+											（2）乘坐311路；319路（原751路）；379路；419路；425路；450路；484路；518路；695路到“豹房”站，向西再向北步行，约14分钟到达中国科学技术馆；<br>
+											（3）乘坐301路；653路；905路；快速公交3号线；快速公交3号线区间到“慧忠北里”站，向北再向西北步行，约16分钟到达中国科学技术馆；
+
+										</p>
+									</div>
+								</div>
+								<div class="grids_info mt-xl-5 mt-4">
+									<i class="fas fa-icons"></i>
+									<div class="detail">
+										<h4>2.地铁线路：</h4>
+										<p>
+											（1）乘坐地铁8号线到“奥林匹克公园”站出东北口，向北再向东步行约8分钟；<br>
+											（2）乘坐地铁8号线到“森林公园南门”站出东南口，向南再向东步行约10分钟；<br>
+											（3）乘坐地铁15号线到“安立路”站出A1口，向西再向北步行约15分钟；</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="w3l-video-sec" id="video">
+				<h3 class="title-style text-center"><img style="width: 25px;" src="./images/public-icon3.png"
+						alt="">展馆介绍<img style="width: 25px;" src="./images/public-icon4.png" alt=""></h3>
+				<div class="container">
+					<div class="row w3l-video">
+						<div class="col-12">
+							<div class="videow3-right">
+								<div class="w3l-index5 py-5">
+									<div class="history-info align-self text-center py-5">
+										<div class="position-relative py-5">
+											<!-- <a href="#small-dialog1"
+													class="popup-with-zoom-anim play-view text-center position-absolute">
+													<span class="video-play-icon">
+														<span class="fa fa-play"></span>
+													</span>
+												</a> -->
+											<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+											<div id="small-dialog1" class="zoom-anim-dialog mfp-hide">
+												<!-- <iframe  src="./media/e73caca30d57e5a82538c309e501e903.mp4"
+														frameborder="0" allow="autoplay;  picture-in-picture"
+														allowfullscreen></iframe> -->
+												<video src="media/e73caca30d57e5a82538c309e501e903.mp4" width="100%"
+													autoplay="autoplay" controls="controls" muted
+													allow="autoplay; fullscreen; picture-in-picture">
+													<!-- <source src="media/e73caca30d57e5a82538c309e501e903.mp4"
+															type="video/mp4"> -->
+												</video>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<section class="w3l-homeblock1 py-5" id="zhanguan">
+				<h3 class="title-style text-center"><img style="width: 25px;" src="./images/public-icon3.png"
+						alt="">博物馆展览<img style="width: 25px;" src="./images/public-icon4.png" alt=""></h3>
+				<div class="container py-lg-5 py-md-4 py-2">
+					<div class="row align-items-center">
+						<div class="col-lg-5">
+							<h3 class="title-style">欢迎了解内涵</h3>
+							<h5 class="sub-title mt-md-4 mt-md-5 mt-4">想了解更多展品和知识 <br>快来科技博物馆！</h5>
+							<a href="#" class="btn btn-style mt-lg-5 mt-4">更多</a>
+						</div>
+						<div class="col-lg-7 mt-lg-0 mt-5 ps-lg-5">
+							<div class="row">
+								<div class="col-6">
+									<div class="column-w3-img position-relative">
+										<a href="#image"><img src="./images/激光技术/laser.gif" alt=""
+												class="radius-image img-fluid"></a>
+									</div>
+									<div class="column-w3-img position-relative mt-4">
+										<a href="#image"><img src="./images/1.webp" alt=""
+												class="radius-image img-fluid"></a>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="column-w3-img position-relative">
+										<a href="#image"><img src="./images/2.webp" alt=""
+												class="radius-image img-fluid"></a>
+									</div>
+									<div class="column-w3-img position-relative mt-4">
+										<a href="#image"><img src="./images/航天技术/aerospace.jpg" alt=""
+												class="radius-image img-fluid"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="w3l-whyblock py-5" id="canguan">
+				<h3 class="title-style text-center"><img style="width: 25px;" src="./images/public-icon3.png"
+						alt="">参观须知<img style="width: 25px;" src="./images/public-icon4.png" alt=""></h3>
+				<div class="container py-lg-5 py-md-4 py-2">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<img src="./images/v2-cddc541475ee3a77452dd1122bd8a143_r.jpg" alt=""
+								class="img-fluid radius-image">
+						</div>
+						<div class="col-lg-6 ps-xl-5 ps-lg-4 mt-lg-0 mt-5">
+							<h3 class="title-style mb-4">注意事项</h3>
+							<p></p>
+							<div class="two-grids mt-5">
+								<div class="grids_info">
+									<i class="fas fa-volume-up"></i>
+									<div class="detail">
+										<h4>您在故宫博物院内参观游览时请勿吸烟，并提醒他人不要吸烟</h4>
+										<p>
+											故宫是世界上现存最大的木结构宫殿建筑群，历史上曾经多次发生火灾。每个点燃的烟头都可能是对这片珍贵历史文化遗产的威胁。</p>
+									</div>
+								</div>
+								<div class="grids_info mt-xl-5 mt-4">
+									<i class="fas fa-icons"></i>
+									<div class="detail">
+										<h4>做文明观众</h4>
+										<p>
+											为不妨碍、影响他人参观，按照国际惯例在展厅请勿使用闪光灯和三脚架拍照。在我院与其他博物馆合作举办的展览以及特色商品店，因有版权协议，不允许观众拍照展品，请注意警示标志并服从展厅工作人员的管理。
+										</p>
+									</div>
+								</div>
+								<div class="grids_info mt-xl-5 mt-4">
+									<i class="fas fa-icons"></i>
+									<div class="detail">
+										<h4>在您参观时请留意自己携带的物品，提防扒窃</h4>
+										<p>
+											请不要轻信和接受社会散杂人员派发的各种广告和兜售的商品。严防上当受骗，并欢迎举报。</p>
+									</div>
+								</div>
+								<div class="grids_info mt-xl-5 mt-4">
+									<i class="fas fa-icons"></i>
+									<div class="detail">
+										<h4>如遇人群密集时，请听从工作人员的疏导，有序参观，不要拥挤</h4>
+										<p>
+											请不要轻信和接受社会散杂人员派发的各种广告和兜售的商品。严防上当受骗，并欢迎举报。
+											故宫派出所电话：010－65131882</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="w3l-button-sec py-5">
+				<div class="container py-5">
+					<div class="w3-midhny-sec p-5">
+						<div class="row align-items-center p-md-4">
+							<div class="col-xl-8 col-lg-9">
+								<div class="title-content-two pe-lg-5">
+									<h3 class="title-w3l mb-md-1 mb-4 d-md-flex align-items-center">随时联系我们！
+										<a class="mt-md-0 mt-2" href="tel:+ 12 123 456 789">+ 12 123 456 789</a>
+									</h3>
+									<p>遇到任何问题，可以随时拨打移动热线</p>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-3 mt-lg-0 mt-sm-5 mt-4 text-lg-end">
+								<a href="#" class="btn btn-style ">服务</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="xuzhi" style="height: 6.25rem;">
+					<p>最新通知</p>
+				</div>
+			</section>
+		</div>
+		</div>
+		<div class="footer">
+		    <div class="footerBox wrapper">
+		        <dl class="col-4">
+		            <dt>友情链接</dt>
+		            <dd>首页</dd>
+		            <dd>科技展示</dd>
+		            <dd>教育</dd>
+		            <dd>服务</dd>
+		         
+		        </dl>
+		  
+		        <dl class="about col-4">
+		            <dt>关于我们</dt>
+		            <dd>
+		                <i class="icon icon-shizhong"></i>
+		                <p>星期一 -- 星期六:<br>9:00am -- 10:00Pm</p>
+		            </dd>
+		            <dd>
+		                <i class="icon icon-weibiaoti-3"></i>
+		                <p>黑龙江省哈尔滨市南岗区**路****号</p>
+		            </dd>
+		            <dd>
+		                <i class="icon icon-dianhua"></i>
+		                <p class="special">0451-1234-5678<br>0451-1234-5678</p>
+		            </dd>
+		            <dd>
+		                <i class="icon icon-xinfeng"></i>
+		                <p class="special">123@456.com<br>123@456.com</p>
+		            </dd>
+		        </dl>
+		
+		
+		    </div>
+		</div>
+		
+	</body>
+
+	<script src="https://webapi.amap.com/maps?v=1.4.15&key=	b890ea509b9c3a78d7595d5880e4360c"></script>
+	<script>
+		var map = new AMap.Map('weapper', {
+			resizeEnable: true, //是否监控地图容器尺寸变化
+			zoom: 11, //初始化地图层级
+			center: [116.397428, 39.90923] //初始化地图中心点
+		});
+	</script>
+
+</html>
